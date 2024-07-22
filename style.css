@@ -1,0 +1,24 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+    background-color: yellow;
+    color:black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.recipe{
+    font: size 22px;
+    text-align: left;
+}
+
+.image{
+    width: 250px;
+    height: auto;
+}
+
+ol{
+    background-color: lightpink;
+}
