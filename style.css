@@ -1,16 +1,23 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
+
+
+body{
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .title{
-    background-color: yellow;
-    color:black;
+    color:#ff6347;
     font-size: 40px;
     text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
 }
 
 .recipe{
-    font: size 22px;
+    font-size: 22px;
     text-align: left;
 }
 
@@ -21,4 +28,59 @@
 
 ol{
     background-color: lightpink;
+}
+
+ul{
+    list-style-type: square;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.recipe a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 2px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover{
+    background-color: #45a049
+}
+
+.recipe-content {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.recipe-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.ingredients ul, .steps ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    h1.title {
+        font-size: 2em;
+    }
+    .recipe a{
+        font-size: 1.2em;
+        padding: 8px 16px;
+    }
 }
